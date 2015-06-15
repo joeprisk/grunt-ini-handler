@@ -1,5 +1,5 @@
 /*
- * grunt-ini-file
+ * grunt-ini-handler
  *
  *
  * Copyright (c) 2014 Enrique Moreno Tent
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
 		},
 
 		// Configuration to be run (and then tested).
-		"ini-file": {
+		"ini-handler": {
 			data:{
 				file: "tmp/test.ini",
 				values: {
@@ -58,7 +58,7 @@ module.exports = function(grunt) {
 
 	// Whenever the "test" task is run, first clean the "tmp" dir, then run this
 	// plugin's task(s), then test the result.
-	grunt.registerTask('test', ['clean', 'ini-file', 'nodeunit']);
+	grunt.registerTask('test', ['clean', 'ini-handler', 'nodeunit']);
 
 	// By default, lint and run all tests.
 	grunt.registerTask('default', ['jshint']);

@@ -1,8 +1,8 @@
 {
-  "name": "grunt-basic-ini-file",
+  "name": "grunt-ini-handler",
   "description": "Handling INI files",
   "version": "0.1.0",
-  "homepage": "https://github.com/kernowjoe/grunt-basic-ini-file",
+  "homepage": "https://github.com/kernowjoe/grunt-ini-handler",
   "author": {
     "name": "Joe Prisk",
     "email": "joe@uknetweb.com",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/kernowjoe/grunt-basic-ini-file.git"
+    "url": "git://github.com/kernowjoe/grunt-ini-handler.git"
   },
   "bugs": {
-    "url": "https://github.com/kernowjoe/grunt-basic-ini-file/issues"
+    "url": "https://github.com/kernowjoe/grunt-ini-handler/issues"
   },
   "licenses": [
     {
