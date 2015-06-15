@@ -14,7 +14,7 @@ npm install grunt-ini-handler --save-dev
 To install this fork add this to your package.json dev dependencies
 ```js
 "devDependencies": {
-    "grunt-ini-handler": "https://github.com/kernowjoe/grunt-ini-handler.git"
+    "grunt-ini-handler": "*"
   },
 ```
 
