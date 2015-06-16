@@ -49,7 +49,11 @@ grunt.initConfig({
 ```
 
 ## Testing
-grunt test (very basic and sketchy at best)
+Testing is very basic and sketchy at best
+
+```shell
+npm test
+```
 
 
 ## Thanks
