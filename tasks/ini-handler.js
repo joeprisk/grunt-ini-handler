@@ -20,9 +20,9 @@ module.exports = function(grunt) {
 
 		var file = data.file;
 		if (!grunt.file.exists(file)) {
-			grunt.log.warn(chalk.red("File " + file + " does not exist"));
-			grunt.log.writeln(chalk.cyan("Don't worry I've created n empty one for you"));
+			grunt.log.warn(file + ' does not exist');
 			grunt.file.write(file);
+			grunt.log.ok(file + ' created');
 		}
 
 		// Read in the existing key values
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
 		src = objectToString(keyValues);
 
 		grunt.file.write(file, src);
-		grunt.log.writeln(chalk.green('>>') + ' ' + Object.keys(data.values).length + ' key:values added');
+		grunt.log.ok(Object.keys(data.values).length + ' key:values added');
 
 	});
 
@@ -57,13 +57,16 @@ module.exports = function(grunt) {
 	function stringToObject(string) {
 
 		// split by line breaks
-		var rows = string.split("\r\n"),
+		var rows = string.split("\n"),
 			parts = {};
 
 		rows.forEach(function(string) {
-			var split = string.split("=");
 
-			parts[split[0]] = split[1];
+			if(/\S/.test(string)) {
+				var split = string.split("=");
+
+				parts[split[0].trim()] = split[1].trim();
+			}
 		});
 
 		return parts;
@@ -81,6 +84,6 @@ module.exports = function(grunt) {
 			}
 		});
 
-		return strings.join("\r\n") + "\r\n";
+		return strings.join("\n") + "\n";
 	}
 };

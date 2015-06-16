@@ -39,7 +39,7 @@ exports.ini_file = {
     nodeunit.expect(1);
 
     var actual = grunt.file.read('tmp/test.ini');
-    var expected = grunt.file.read('test/expected/test.ini');
+    var expected = "one=uno\ntwo=dos\n";
     nodeunit.equal(actual, expected, 'should describe what the default behavior is.');
 
     nodeunit.done();
