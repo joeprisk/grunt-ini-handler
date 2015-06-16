@@ -1,7 +1,7 @@
 {
   "name": "grunt-ini-handler",
   "description": "Handling INI files",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/kernowjoe/grunt-ini-handler",
   "author": {
     "name": "Joe Prisk",
@@ -21,7 +21,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "/blob/master/LICENSE-MIT"
+      "url": "/LICENSE-MIT"
     }
   ],
   "engines": {
