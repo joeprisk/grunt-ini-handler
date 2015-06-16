@@ -12,8 +12,6 @@
 
 module.exports = function(grunt) {
 
-	var chalk = require('chalk');
-
 	grunt.registerMultiTask('ini-handler', 'Changing values to an INI file', function() {
 
 		var data = this.data;
